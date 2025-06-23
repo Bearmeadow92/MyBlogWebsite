@@ -11,16 +11,6 @@ const identity = {
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs", "Problem Solving", "Cybersecurity", "IT Support",
 "Linux", "Networking", "Cloud Computing", "Git", "Agile Methodologies", "Team Collaboration"];
-
-const happy = true;
-const finished = true;
-const goal = 3;
-
-
-
-const skillColor = "navy";
-const fontWeight = "bold";
-const textCase = "uppercase";
 ---
 
 
@@ -42,23 +32,26 @@ const textCase = "uppercase";
 	</head>
 	<body>
 <BaseLayout pageTitle={pageTitle}>
-<h2>My awesome blog subtitle</h2>
-
-        <style is:global define:vars={{skillColor, fontWeight, textCase}}>
+    <h1>Next Gen Technologist</h1>
+<h2>Empowering Future Technologists</h2>
+&nbsp;
+&nbsp;
+        <style>
         h1 {
-            color: purple;
+            color: rgb(41, 3, 145);
             font-size: 4rem;
         }
         .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
+        color: rgb(42, 135, 42);
+        font-weight: bold;
+        text-transform: uppercase;
         }
         </style>
 
 
 <h2>... and my new Astro site!</h2>
-
+&nbsp;
+&nbsp;
         <p>Hi, I'm Jesse Fletcher. I'm a Marine Corps veteran who found my
         purpose in technology after years of working in the mechanical trades.
         That hands-on experience built my problem-solving skills and gave me a
@@ -74,6 +67,10 @@ const textCase = "uppercase";
             honest, and empowering for everyone.</p>
 
 <p>Here are a few facts about me:</p>
+
+
+
+
 <ul>
     <li>My name is {identity.firstName}.</li>
     <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
@@ -82,15 +79,14 @@ const textCase = "uppercase";
     </li>
     }
 </ul>
+&nbsp;
+&nbsp;
 <p>My skills are:</p>
     <ul>
         {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
-{happy && <p>I am happy to be learning Astro!</p>}
-
-{finished && <p>I finished this tutorial!</p>}
-
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+&nbsp; 
+        <p>Thanks for visiting my blog! I hope you find something useful here.</p>
 </BaseLayout>
 	</body>
 </html>
