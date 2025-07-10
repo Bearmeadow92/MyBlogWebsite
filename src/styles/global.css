@@ -45,7 +45,7 @@ h1 {
     width: 100%;
     top: 5rem;
     left: 48px;
-    background-color: #ff9776;
+    background-color: #56046e;
     display: none;
     margin: 0;
 }
@@ -62,7 +62,7 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #ff9776;
+    background-color: #56046e;
 }
 
 .expanded {
@@ -121,3 +121,18 @@ html.dark {
         background-color: #ffffff;
     }
 
+    #themeToggle {
+    border: 0;
+    background: none;
+    }
+    .sun { fill: black; }
+    .moon { fill: transparent; }
+
+    :global(.dark) .sun { fill: transparent; }
+    :global(.dark) .moon { fill: white; }
+
+        footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    }
