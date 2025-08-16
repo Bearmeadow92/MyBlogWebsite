@@ -62,23 +62,10 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs", "
         I started this blog to share what I discover, help others grow in tech, and 
         create a space where people can learn without judgment.</p>
 
-        <p>Outside of work I spend time gaming, rollerblading, exploring creative projects,
+        <p>Outside of work I spend time gaming, {identity.hobbies[3]}, exploring creative projects,
             and staying curious about the world. I believe technology should be useful,
             honest, and empowering for everyone.</p>
 
-<p>Here are a few facts about me:</p>
-
-
-
-
-<ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {identity.hobbies.length >= 2 &&
-    <li>Some of my hobbies are: {identity.hobbies[0]}, {identity.hobbies[1]}, {identity.hobbies[2]}, and {identity.hobbies[3]}.
-    </li>
-    }
-</ul>
 &nbsp;
 &nbsp;
 <p>My skills are:</p>
